@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(141, 240, 171, 0.849);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#principal{
+    text-align: center;
+    background-color: rgb(4, 83, 29);
+    color: white;
+}
+.subtitulo{
+    color:rgb(4, 83, 29) ;
+    text-decoration: underline;
+
+}
+.basico{
+    color: rgb(6, 148, 51);
+}
+.intermediario{
+    color: rgb(146, 148, 6);
+}
+.avançado{
+    color: rgb(148, 23, 6);
+}
+.destaque{
+    background-color: rgba(243, 234, 112, 0.692);;
+}
