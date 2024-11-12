@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: solid 4px rgba(128, 128, 128, 0.459);
+        }
+        #tabela2{
+            width: 600px;
+            border-collapse: separate;
+        }
+        td{
+            border: solid 2px black;
+            padding: 10px;
+
+        }
+        .dado{
+            background-color: rgba(0, 0, 0, 0.459);
+            color: white;
+        }
+        .colorido{
+            background-image:linear-gradient(to left, yellow, orange, red);
+            color: white;
+            font-weight: bolder;
+        }
+        .colorido2{
+            background-image: linear-gradient(to left, blue, purple);
+            color: white;
+            font-weight: bolder class="colorido3";
+        }
+        .colorido3{
+            background-image: linear-gradient(to left,red,blue);
+            color: white;
+            font-weight: bold;
+        }
+        .colorido4{
+            background-image: linear-gradient(to right,red,blue);
+            color: white;
+            font-weight: bold class="colorido4";
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+            TABLE = Tabela
+                TABLE ROW = Linha de Tabela
+                    TABLE HEADER = Cabeçalho de Tabela
+                        TABLE DATA = Dado de Tabela
+    -->
+    <table>
+        <tr>
+            <td class="dado">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td class="dado">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td class="dado">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td class="dado">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <br>
+    <table id="tabela2">
+        <tr>
+            <td class="colorido">01</td>
+            <td class="colorido">02</td>
+            <td class="colorido">03</td>
+            
+        </tr>
+        <tr>
+           <td class="colorido3">04</td>
+           <td class="colorido4">05</td>
+           <td class="colorido3">06</td>
+            
+        </tr>
+        <tr>
+           <td class="colorido4">07</td>
+           <td class="colorido3">08</td>
+           <td class="colorido4">09</td>
+            
+        </tr>
+        <tr>
+           <td class="colorido2">10</td>
+           <td class="colorido2">11</td>
+           <td class="colorido2">12</td>
+           
+        </tr>
+    </table>                    
+
+</body>
+</html>
