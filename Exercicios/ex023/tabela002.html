@@ -11,15 +11,30 @@
         table{
             width: 700px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid  black;
             padding: 8px;
             
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.521);
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th { /*Cabeçalho fixo tabelas Grandes*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){          /* odd=impar, even=par (efeito zebrado) ou 2n-1 , 2n */
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -33,6 +48,7 @@
     <h1>Uso de TABELAS GRANDES</h1>
     <!--
         Anatomia para Tabelas GRANDES
+         CAPTION
             TABLE
                 THEAD
                     TR, TD ,TH
@@ -42,11 +58,14 @@
                     TR, TD, TH        
     -->
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
-            <th>Posição</th>
-            <th>Estado</th>
-            <th>População</th>
-            <th>País Comparável</th>
+            <th scope="col" style="width: 20px;">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col">País Comparável</th>
 
         </thead>
         <tbody>
@@ -215,12 +234,37 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <th>Brasil</th>
+                <th scope="row">Total de Habitantes</th>
+                <td>Brasil</td>
                 <td class="num">212 583 720</td>
-                <td>População mundial(10,3 bilhões)</td>
+                <td class="pais">População mundial(10,3 bilhões)</td>
             </tr>
         </tfoot>
-    </table>                
+    </table> 
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellendus consectetur expedita repellat amet laborum dolores corrupti, unde veniam, enim praesentium ullam dicta blanditiis quae voluptatibus voluptatum tempore esse quod.
+    Non, qui tempora? Ducimus architecto voluptatem hic quos sed harum quo tempora ullam dicta, possimus, consequatur ratione? Cupiditate assumenda delectus dicta, vero in ea porro molestiae laboriosam esse laborum harum!
+    Corporis, rerum ullam! Sit rem unde vel possimus ducimus nisi fugit aliquid, odit, corrupti dolores dolore illum obcaecati ipsam minus sequi doloribus omnis alias delectus aspernatur! Fuga reprehenderit magni magnam?
+    Molestiae itaque tempora consectetur, laudantium quo odio unde temporibus nesciunt fuga maxime obcaecati a molestias! Eligendi neque officiis numquam voluptate est! Nihil fuga vero, voluptatum numquam sed architecto natus dignissimos?
+    Minus pariatur culpa quis non facilis recusandae sapiente adipisci illo voluptatibus iure quod, cumque corrupti sit ratione. Voluptate perferendis distinctio impedit earum odio maiores hic, adipisci laborum eligendi nam at?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius ad itaque ex maiores quasi, eum, recusandae eos blanditiis quae iure perferendis illo facilis atque. Ad inventore voluptate quia magni?
+    Sequi voluptate beatae aliquid officiis. Recusandae exercitationem facere itaque atque quasi consequatur corrupti blanditiis quibusdam aperiam provident consequuntur accusantium similique eaque ullam quia officiis possimus doloribus sequi, unde hic quae.
+    Iste aliquam similique ducimus quasi alias voluptas culpa necessitatibus illo sit eum minima, esse quia! Voluptatibus exercitationem labore magni, praesentium laborum totam ducimus eligendi assumenda, magnam minima iure, vel sint.
+    Minus tenetur itaque quod blanditiis vero illum eum cum illo porro, quo incidunt aut assumenda recusandae dignissimos fugiat molestiae ullam at soluta tempora officiis quis ab. Consequuntur numquam eius sunt.
+    Animi possimus, quod, nemo ullam minus quia eaque voluptatem blanditiis delectus, recusandae dolorem. Recusandae error temporibus voluptate dolores animi veritatis, dignissimos, maiores voluptatem soluta incidunt aliquid, labore ipsa corporis perferendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius ad itaque ex maiores quasi, eum, recusandae eos blanditiis quae iure perferendis illo facilis atque. Ad inventore voluptate quia magni?
+    Sequi voluptate beatae aliquid officiis. Recusandae exercitationem facere itaque atque quasi consequatur corrupti blanditiis quibusdam aperiam provident consequuntur accusantium similique eaque ullam quia officiis possimus doloribus sequi, unde hic quae.
+    Iste aliquam similique ducimus quasi alias voluptas culpa necessitatibus illo sit eum minima, esse quia! Voluptatibus exercitationem labore magni, praesentium laborum totam ducimus eligendi assumenda, magnam minima iure, vel sint.
+    Minus tenetur itaque quod blanditiis vero illum eum cum illo porro, quo incidunt aut assumenda recusandae dignissimos fugiat molestiae ullam at soluta tempora officiis quis ab. Consequuntur numquam eius sunt.
+    Animi possimus, quod, nemo ullam minus quia eaque voluptatem blanditiis delectus, recusandae dolorem. Recusandae error temporibus voluptate dolores animi veritatis, dignissimos, maiores voluptatem soluta incidunt aliquid, labore ipsa corporis perferendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius ad itaque ex maiores quasi, eum, recusandae eos blanditiis quae iure perferendis illo facilis atque. Ad inventore voluptate quia magni?
+    Sequi voluptate beatae aliquid officiis. Recusandae exercitationem facere itaque atque quasi consequatur corrupti blanditiis quibusdam aperiam provident consequuntur accusantium similique eaque ullam quia officiis possimus doloribus sequi, unde hic quae.
+    Iste aliquam similique ducimus quasi alias voluptas culpa necessitatibus illo sit eum minima, esse quia! Voluptatibus exercitationem labore magni, praesentium laborum totam ducimus eligendi assumenda, magnam minima iure, vel sint.
+    Minus tenetur itaque quod blanditiis vero illum eum cum illo porro, quo incidunt aut assumenda recusandae dignissimos fugiat molestiae ullam at soluta tempora officiis quis ab. Consequuntur numquam eius sunt.
+    Animi possimus, quod, nemo ullam minus quia eaque voluptatem blanditiis delectus, recusandae dolorem. Recusandae error temporibus voluptate dolores animi veritatis, dignissimos, maiores voluptatem soluta incidunt aliquid, labore ipsa corporis perferendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius ad itaque ex maiores quasi, eum, recusandae eos blanditiis quae iure perferendis illo facilis atque. Ad inventore voluptate quia magni?
+    Sequi voluptate beatae aliquid officiis. Recusandae exercitationem facere itaque atque quasi consequatur corrupti blanditiis quibusdam aperiam provident consequuntur accusantium similique eaque ullam quia officiis possimus doloribus sequi, unde hic quae.
+    Iste aliquam similique ducimus quasi alias voluptas culpa necessitatibus illo sit eum minima, esse quia! Voluptatibus exercitationem labore magni, praesentium laborum totam ducimus eligendi assumenda, magnam minima iure, vel sint.
+    Minus tenetur itaque quod blanditiis vero illum eum cum illo porro, quo incidunt aut assumenda recusandae dignissimos fugiat molestiae ullam at soluta tempora officiis quis ab. Consequuntur numquam eius sunt.
+    Animi possimus, quod, nemo ullam minus quia eaque voluptatem blanditiis delectus, recusandae dolorem. Recusandae error temporibus voluptate dolores animi veritatis, dignissimos, maiores voluptatem soluta incidunt aliquid, labore ipsa corporis perferendis.</p>               
 </body>
 </html>
